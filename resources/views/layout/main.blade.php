@@ -12,29 +12,34 @@
     <script src="//code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- <div class="col-1">
+  <div class="container">
+  <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+      <div class="container-fluid justify-content-around" style="font-family: 'Poppins', sans-serif">
+        <!-- Inside Navbar -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- Logo Siskamling -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/logoSiskamling.svg" alt="">
+          </a>
+          <!-- Navigate with nav-link -->
+          <div class="navbar-nav">
+            <a class="nav-link active mx-4" aria-current="page" href="/">Beranda</a>
+            <a class="nav-link mx-2" href="/kelas">Kelas</a>
+            <a class="nav-link mx-3" href="/transkrip">Transkrip</a>
+            <!-- <button type="button" href="/lapor" class="btn btn-danger px-4" >Lapor</button> -->
+            <a href="/lapor" class="btn btn-danger px-4" role="button">Lapor</a>
+          </div>
         </div>
-        <div class="col-10 align-content-center"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
-            <div class="container-fluid justify-content-around" style="font-family: 'Poppins', sans-serif">
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logoSiskamling.svg" alt="">
-                  </a>
-                <div class="navbar-nav">
-                  <a class="nav-link active mx-4" aria-current="page" href="#">Beranda</a>
-                  <a class="nav-link mx-2" href="#">Kelas</a>
-                  <a class="nav-link mx-3" href="#">Transkrip</a>
-                  <button type="button" class="btn btn-danger px-4">Lapor</button>
-                </div>
-              </div>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
+        <!-- Icon Profile Dropwdown Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item dropdown">
+                    <!-- Toggle With Icon Profile -->
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src="assets/iconProfile.svg" alt="">
                     </a>
+                    <!-- Menu -->
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Profil</a></li>
                       <li><a class="dropdown-item" href="#">Transkrip</a></li>
@@ -42,11 +47,10 @@
                     </ul>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-    <!-- </div> -->
+        </div>
+      </div>
+    </nav>
+  </div>
     @yield('container')
-    </div>
 </body>
 </html>
